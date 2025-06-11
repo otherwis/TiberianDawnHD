@@ -140,7 +140,7 @@ check-variables:
 	fi
 
 engine: check-variables check-sdk-scripts
-	@./fetch-engine.sh || (printf "Unable to continue without engine files\n"; exit 1)
+	#@./fetch-engine.sh || (printf "Unable to continue without engine files\n"; exit 1)
 	@cd $(ENGINE_DIRECTORY) && make RUNTIME=$(RUNTIME) TARGETPLATFORM=$(TARGETPLATFORM) all
 
 all: engine

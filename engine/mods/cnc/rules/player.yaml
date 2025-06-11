@@ -74,8 +74,8 @@ Player:
 		Prerequisites: techlevel.low, techlevel.medium, techlevel.high, techlevel.superweapons
 		Id: unrestricted
 	GrantConditionOnPrerequisiteManager:
-	ResourceStorageWarning:
-		TextNotification: notification-silos-needed
 	PlayerExperience:
 	GameSaveViewportManager:
 	PlayerRadarTerrain:
+	# ResourceStorageWarning:
+	# 	TextNotification: notification-silos-needed

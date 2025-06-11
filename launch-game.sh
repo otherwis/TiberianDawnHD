@@ -39,11 +39,11 @@ fi
 require_variables "MOD_ID" "ENGINE_VERSION" "ENGINE_DIRECTORY"
 
 cd "${TEMPLATE_ROOT}"
-if [ ! -f "${ENGINE_DIRECTORY}/bin/OpenRA.dll" ] || [ "$(cat "${ENGINE_DIRECTORY}/VERSION")" != "${ENGINE_VERSION}" ]; then
-	echo "Required engine files not found."
-	echo "Run \`make\` in the mod directory to fetch and build the required files, then try again.";
-	exit 1
-fi
+# if [ ! -f "${ENGINE_DIRECTORY}/bin/OpenRA.dll" ] || [ "$(cat "${ENGINE_DIRECTORY}/VERSION")" != "${ENGINE_VERSION}" ]; then
+# 	echo "Required engine files not found."
+# 	echo "Run \`make\` in the mod directory to fetch and build the required files, then try again.";
+# 	exit 1
+# fi
 
 if command -v mono >/dev/null 2>&1 && [ "$(grep -c .NETCoreApp,Version= ${ENGINE_DIRECTORY}/bin/OpenRA.dll)" = "0" ]; then
 	RUNTIME_LAUNCHER="mono --debug"
