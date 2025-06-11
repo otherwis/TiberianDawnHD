@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "MobiusMod": {
+      "commandName": "Executable",
+      "executablePath": "cmd",
+      "workingDirectory": "../",
+      "commandLineArgs": "/k launch-game.cmd"
+    }
+  }
+}
