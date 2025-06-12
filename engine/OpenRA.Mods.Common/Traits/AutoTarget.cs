@@ -50,7 +50,7 @@ namespace OpenRA.Mods.Common.Traits
 		public readonly UnitStance InitialStanceAI = UnitStance.AttackAnything;
 
 		[Desc("Possible values are HoldFire, ReturnFire, Defend and AttackAnything. Used for human players.")]
-		public readonly UnitStance InitialStance = UnitStance.Defend;
+		public readonly UnitStance InitialStance = UnitStance.AttackAnything;
 
 		[GrantedConditionReference]
 		[Desc("The condition to grant to self while in the HoldFire stance.")]
